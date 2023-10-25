@@ -4,11 +4,11 @@
 
 // Return true if the array contains the value, false if not.
 
-function check(a, x) {
-   
-    a.filter((el){
-        return x
-    })
-}
+// function check(a, x) {
 
-console.log(check([1, 2, 3], 3));
+//     a.filter((el){
+//         return x
+//     })
+// }
+
+console.log("Это первая строка,\nа это вторая");

@@ -9,14 +9,24 @@
 // countBy(1, 10) === [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // countBy(2, 5) === [2, 4, 6, 8, 10]
 
-function countBy(x, n) {
-  let z = [];
-
-  for (let i = 1; z.length < n; i++) {
-    z.push(x * i);
+const countBy = (x, n) => {
+  let res = [];
+  for (let i = 1; res.length <= n; i++) {
+    res.push(x * i);
   }
-  return z;
-}
+  return res;
+};
 
-console.log(countBy(3,3));
-//То есть здесь уже в строке 16 мы проверяем на кратность умножением
+console.log(countBy(2, 5));
+
+// function countBy(x, n) {
+//   let z = [];
+
+//   for (let i = 1; z.length < n; i++) {
+//     z.push(x * i);
+//   }
+//   return z;
+// }
+
+// console.log(countBy(3,3));
+// //То есть здесь уже в строке 16 мы проверяем на кратность умножением

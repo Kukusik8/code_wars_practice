@@ -11,11 +11,21 @@
 
 // Input: [0, -1, -5];
 // Output: "even";
-    function oddOrEven(array) {
-    let res = array.reduce((ind, el) => {
-        return ind + el;
-    }, 0);
-    return res % 2 === 0 ? "Четное" : "Нечетное";
-    }
 
-    console.log(oddOrEven([4, 2, 3]));
+const oddOrEven = (arr) => {
+  let res = arr.reduce((total, index) => {
+    let sum = total + index;
+    return total + index;
+  });
+  return res % 2 === 0 ? "Sum is even" : "Sum is odd";
+};
+
+console.log(oddOrEven([1, 2, 2]));
+// function oddOrEven(array) {
+// let res = array.reduce((ind, el) => {
+//     return ind + el;
+// }, 0);
+// return res % 2 === 0 ? "Четное" : "Нечетное";
+// }
+
+// console.log(oddOrEven([4, 2, 3]));

@@ -12,5 +12,5 @@
 // I is misinterpreted as 1
 
 function correct(string) {
-    
+    // use RegExp think
 }
