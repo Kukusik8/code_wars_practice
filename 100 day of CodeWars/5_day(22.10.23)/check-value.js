@@ -11,4 +11,6 @@
 //     })
 // }
 
-console.log("Это первая строка,\nа это вторая");
+const checkValue = (a, x) => (a.includes(x) ? true : false);
+
+console.log(checkValue([1, 2, 3], 3));

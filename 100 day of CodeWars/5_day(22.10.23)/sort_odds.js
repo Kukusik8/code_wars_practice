@@ -25,7 +25,7 @@ console.log(sortArray([7, 1, 4, 2, 6, 3, 5]));
 
 
 
-// function sortArray(array) {
-//   const odd = array.filter((x) => x % 2).sort((a, b) => a - b);
-//   return array.map((x) => (x % 2 ? odd.shift() : x));
-// }
+function sortArray(array) {
+  const odd = array.filter((x) => x % 2).sort((a, b) => a - b);
+  return array.map((x) => (x % 2 ? odd.shift() : x));
+}
