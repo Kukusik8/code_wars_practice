@@ -9,20 +9,20 @@
 //   ("A", "T", "G", "C") ? ("T", "A", "C", "T") : false;
 // console.log(DNAStrand("ACGT"));
 
-// function DNAStrand(dna) {
-//   let complement = "";
-//   dna.split("").forEach((element) => {
-//     if (element === "A") {
-//       complement += "T";
-//     } else if (element === "T") {
-//       complement += "A";
-//     } else if (element === "C") {
-//       complement += "G";
-//     } else if (element === "G") {
-//       complement += "C";
-//     }
-//   });
-//   return complement;
-// }
+function DNAStrand(dna) {
+  let complement = "";
+  dna.split("").forEach((element) => {
+    if (element === "A") {
+      complement += "T";
+    } else if (element === "T") {
+      complement += "A";
+    } else if (element === "C") {
+      complement += "G";
+    } else if (element === "G") {
+      complement += "C";
+    }
+  });
+  return complement;
+}
 
 // console.log(DNAStrand("AAA"));

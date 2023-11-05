@@ -15,7 +15,7 @@
 const oddOrEven = (arr) => {
   let res = arr.reduce((total, index) => {
     let sum = total + index;
-    return total + index;
+    return sum;
   });
   return res % 2 === 0 ? "Sum is even" : "Sum is odd";
 };
