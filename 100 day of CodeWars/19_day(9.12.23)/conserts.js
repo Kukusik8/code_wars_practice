@@ -16,7 +16,7 @@ const conserts = {
   Омск: new Date("2020-04-18"),
   Питер: new Date("2024-07-10"),
 };
-
+//new Date() текущая
 function readyToContert(conserts) {
   return Object.keys(conserts)
     .filter((city) => conserts[city] > new Date())
