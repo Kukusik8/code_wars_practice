@@ -33,6 +33,7 @@ function plus(a) {
 function minusa(a) {
   return (b) => a - b;
 }
+
 function divide(a) {
   return (b) => b / a;
 }
@@ -40,6 +41,6 @@ function mult(a) {
   return (b) => a * b;
 }
 
-console.log(one()); //3
+console.log(one(plus(two()))); //3
 
 // b=callback
