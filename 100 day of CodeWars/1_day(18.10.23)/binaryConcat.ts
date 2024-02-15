@@ -2,18 +2,24 @@
 // в двоичном формате.Преобразование может быть выполнено до или после сложения.
 // Возвращаемое значение должно быть строкой, представляющей двоичное число.
 
-const addBinary = (a, b) => {
-  let res = a + b;
-  let res1 = res.toString(2);
-  console.log(typeof res1);
-  return res1;
-};
-
-console.log(addBinary(3, 12));
-
-// function addBinary(a, b) {
-//   let res = a + b;
-//   return res.toString(2);
+// interface Numbs{
+//     a: number;
+//     b: number;
 // }
 
-// console.log(addBinary(8, 2));
+// function summOfTwo({ a, b }:Numbs): number {
+//     return a + b;
+// }
+
+// summOfTwo({ a: 2, b: 3});
+
+// type numers = number
+
+// function summOfTwo(a:numers, b:numers): number {
+//     return a + b;
+// }
+
+function summOfTwo(a: number, b: number): string {
+    let res = a + b;
+    return res.toString(2);
+}
