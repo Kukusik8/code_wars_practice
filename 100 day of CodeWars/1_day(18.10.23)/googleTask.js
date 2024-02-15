@@ -4,12 +4,11 @@
 // причем делая это с 3 - секундной задержкой.
 
 const getIndex = (arr) => {
-  for (let i = 0; i < arr.length; i++){
-    setTimeout(() => {
-      
-    },)
+  for (let i = 0; i < arr.length; i++) {
+    setTimeout(() => {}, i * 3000);
   }
-}
+};
+console.log(getIndex([1, 2, 3]));
 
 // const getIndex = (arr) => {
 //   setTimeout(() => {

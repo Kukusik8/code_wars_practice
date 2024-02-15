@@ -19,3 +19,4 @@ function maxSubArrLength(arr) {
 }
 
 console.log(maxSubArrLength([0, 0, 0, 1, 0, 0, 1]));
+``;
